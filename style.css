@@ -1,0 +1,71 @@
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding-bottom: 13em;
+}
+
+.ViewContainer {
+    max-width: 60em;
+    margin: 0px auto;
+    padding: 0 1em;
+}
+
+.launch {
+    margin-top: 2em;
+    background: #EEE;
+    padding: 1em;
+}
+
+.rocketImg {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    border: 0;
+    box-shadow: 0;
+    padding: 1em;
+    background: #DDD;
+    cursor: pointer;
+}
+
+.backButton {
+    float: left;
+}
+
+.nextButton {
+    float: right;
+}
+
+.nextLaunchCountdown {
+    text-align: center;
+}
+
+/*Navbar*/
+nav.nav {
+    width: 100%;
+    left: 0;
+    top: 0;
+    /*background: #42A5F5;*/
+    max-height: 80px;
+    height: 80px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.nav-container {
+    max-width: 80em;
+    padding: 1em;
+    margin: 0px auto;
+}
+
+nav.nav #nav-logo {
+    color: #42A5F5;
+    font-size: 2rem;
+    text-align: center;
+}
