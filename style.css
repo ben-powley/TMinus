@@ -7,6 +7,7 @@
 body {
     font-family: sans-serif;
     padding-bottom: 13em;
+    background-color: #F5F5F5;
 }
 
 .ViewContainer {
@@ -17,8 +18,21 @@ body {
 
 .launch {
     margin-top: 2em;
-    background: #EEE;
+    background: #FFF;
     padding: 1em;
+    text-align: center;
+    line-height: 3em;
+}
+
+.launches a {
+    color: #777;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.launches a:hover .launch {
+    color: #222;
+    background: #EEE;
 }
 
 .rocketImg {
@@ -46,16 +60,43 @@ button {
     text-align: center;
 }
 
+.launchCountdown {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    background: url('launch.png');
+    background-size: cover;
+    background-position: center;
+    font-size: 1.5rem;
+    padding: 1em;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    padding: 0;
+    width: 50%;
+    margin: 0px auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
 /*Navbar*/
 nav.nav {
     width: 100%;
     left: 0;
     top: 0;
-    /*background: #42A5F5;*/
+    background: #455A64;
     max-height: 80px;
     height: 80px;
-    margin-top: 1em;
-    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-container {
@@ -65,7 +106,6 @@ nav.nav {
 }
 
 nav.nav #nav-logo {
-    color: #42A5F5;
+    color: #FFF;
     font-size: 2rem;
-    text-align: center;
 }

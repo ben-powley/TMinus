@@ -81,17 +81,23 @@ class Launches extends Component {
 
   render() {
     return (
-      <div className="ViewContainer">
-        <NextLaunch />
-        {
-          this.state.launches.map((launch) => {
-            return <div className="launch" key={launch.id}><Link to={`/launches/${launch.id}`}>{launch.name}</Link> // {launch.net}</div>
-          })
-        }
-        <br />
-        <button className="backButton" onClick={this.handleBackClick}>Back</button>
-        <button className="nextButton" onClick={this.handleNextClick}>Next</button>
-      </div>
+    <div>
+        <div className="launchCountdown">
+            <NextLaunch />
+        </div>
+        <div className="ViewContainer">
+            <div className="launches">
+                {
+                  this.state.launches.map((launch) => {
+                    return <Link to={`/launches/${launch.id}`}><div className="launch" key={launch.id}>{launch.name} <hr /> {launch.net}</div></Link>
+                  })
+                }
+                <br />
+                <button className="backButton" onClick={this.handleBackClick}>Back</button>
+                <button className="nextButton" onClick={this.handleNextClick}>Next</button>
+            </div>
+        </div>
+    </div>
     );
   }
 }

@@ -7,7 +7,7 @@ import { Router, Route, Link, IndexRoute, browserHistory } from 'react-router';
 
 ReactDOM.render(
   <Router history={browserHistory}>
-    <Route path="/" component={App} />
+    <Route path="/" component={Launches} />
     <Route path="/launches" component={Launches} />
     <Route path="/launches/:launchID" component={Launch} />
   </Router>,
