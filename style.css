@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     padding-bottom: 13em;
     background-color: #F5F5F5;
 }
@@ -46,6 +47,28 @@ button {
     padding: 1em;
     background: #DDD;
     cursor: pointer;
+}
+
+.centerButton {
+    margin: 0px auto;
+    margin-top: 2em;
+}
+
+.centerButton a {
+    text-decoration: none;
+    background: #DDD;
+    padding: 1em;
+    color: black;
+    margin: 0px auto;
+    width: 100%;
+}
+
+.centerButton a:hover {
+    background: #AAA;
+}
+
+.launchInfo {
+    line-height: 2.5em;
 }
 
 .backButton {
@@ -105,7 +128,8 @@ nav.nav {
     margin: 0px auto;
 }
 
-nav.nav #nav-logo {
+nav.nav #nav-logo a {
     color: #FFF;
     font-size: 2rem;
+    text-decoration: none;
 }
