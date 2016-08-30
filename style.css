@@ -17,6 +17,10 @@ body {
     padding: 0 1em;
 }
 
+.upcomingLaunches {
+    text-align: center;
+}
+
 .launch {
     margin-top: 2em;
     background: #FFF;

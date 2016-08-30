@@ -23,7 +23,6 @@ class Countdown extends Component {
         const _hour = _minute * 60;
         const _day = _hour * 24;
 
-        let timer;
         let now = new Date();
         let distance = endDate - now;
 
