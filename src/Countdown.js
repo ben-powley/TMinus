@@ -24,13 +24,17 @@ class Countdown extends Component {
         const _day = _hour * 24;
 
         let now = new Date();
-        let distance = endDate - now;
+        var t = Date.parse(endDate) - now;
+        var seconds = Math.floor((t / 1000) % 60);
+        var minutes = Math.floor((t / 1000 / 60) % 60);
+        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
 
         this.setState({
-            secondsLeft: Math.floor((distance % _minute) / _second),
-            minutesLeft: Math.floor((distance % _hour) / _minute),
-            hoursLeft: Math.floor((distance & _day) / _hour),
-            daysLeft: Math.floor(distance / _day)
+            secondsLeft: seconds,
+            minutesLeft: minutes,
+            hoursLeft: hours,
+            daysLeft: days
         });
     }
 
